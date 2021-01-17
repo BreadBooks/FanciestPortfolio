@@ -1,0 +1,19 @@
+{
+  "name": "fanciestportfolio",
+  "version": "1.0.0",
+  "description": "My Final Portfolio using React and Material-UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BreadBooks/FanciestPortfolio.git"
+  },
+  "author": "BreadBooks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BreadBooks/FanciestPortfolio/issues"
+  },
+  "homepage": "https://github.com/BreadBooks/FanciestPortfolio#readme"
+}
