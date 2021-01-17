@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Dashboard from "./pages/dashboard"
+import Main from "./pages/main"
 
 
 
@@ -10,7 +10,7 @@ function App() {
     <Router >
       <div className="App">
         <Switch>
-          <Route path="/dashboard" exact component={Dashboard}><Dashboard /></Route>
+          <Route path="/main" exact component={Main}><Main /></Route>
         </Switch>
       </div>
     </Router>
