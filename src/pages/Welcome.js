@@ -13,7 +13,8 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      height: '100vh',
+    height: '100vh',
+      
     },
     image: {
       backgroundImage: 'url(https://images.pexels.com/photos/3937174/pexels-photo-3937174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)',
@@ -28,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      
     },
     avatar: {
       margin: theme.spacing(1),
@@ -49,12 +51,13 @@ function Welcome() {
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
                 <div className={classes.paper}>
                         <br></br>
-                        
                         <Avatar className={classes.avatar}>
                             <FavoriteBorderIcon style={{  textShadow: '1px 3px 5px black', }}/>
         </Avatar>
-                    <Typography variant="h3" style={{ color: grey[50], textShadow: '1px 3px 5px black', }}>
-                    Welcome to my portfolio
+                    <Typography variant="h3" style={{ color: grey[50], textShadow: '1px 3px 5px black',   }}>
+                Welcome to my portfolio
+         </Typography>
+              <Typography variant="h6" style={{ color: grey[50], textShadow: '1px 2px 3px black', textAlign: "center" }}>I am a 21 year old Software Engineering student at the University of Texas at Arlington.
          </Typography>
          
           

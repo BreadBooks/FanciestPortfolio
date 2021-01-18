@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
+        textShadow: '1px 2px 3px black',
 
     },
     margin: {

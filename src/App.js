@@ -1,15 +1,28 @@
 import "./App.css";
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
 import { BrowserRouter as Router, Route, Switch, } from "react-router-dom";
 import Main from './pages/Projects';
 import Welcome from './pages/Welcome';
 import Resume from './pages/Resume';
 import './index.css';
 
-
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      'Nunito',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif'
+    ].join(','),
+  }
+});
 
 function App() {
 
   return (
+    <ThemeProvider theme={theme}>
 <Router>
       <div >
         <Switch>
@@ -28,6 +41,7 @@ function App() {
         </Switch>
       </div>
       </Router>
+      </ThemeProvider>
   );
 }
 
