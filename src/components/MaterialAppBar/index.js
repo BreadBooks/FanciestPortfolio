@@ -26,7 +26,9 @@ const useStyles = makeStyles((theme) => ({
     extendedIcon: {
         marginLeft: theme.spacing(0),
     },
-
+    secondary: {
+        color: 'pink',
+    },
 }));
 
 function redirectHome() {
@@ -80,6 +82,17 @@ export default function MaterialAppBar() {
                         target="_blank">
                     <IconButton>
                         <GitHubIcon  style={{ color: grey[50] }} />
+                        </IconButton>
+                    </Fab>
+                    <Fab 
+                        size="small"
+                        color="secondary"
+                        aria-label="add"
+                        className={classes.margin}
+                        href="https://www.linkedin.com/in/brett-b-breadbooks/"
+                        target="_blank">
+                    <IconButton>
+                        <LinkedInIcon  style={{ color: grey[50] }} />
                         </IconButton>
                         </Fab>
                 </Toolbar>
