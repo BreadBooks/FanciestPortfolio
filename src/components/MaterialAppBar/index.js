@@ -7,6 +7,8 @@ import { IconButton, Fab } from '@material-ui/core';
 import PaletteIcon from '@material-ui/icons/Palette';
 import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 import { grey } from '@material-ui/core/colors';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -74,9 +76,10 @@ export default function MaterialAppBar() {
                         color="secondary"
                         aria-label="add"
                         className={classes.margin}
-                        onClick={redirectResume}>
+                        href="https://github.com/BreadBooks"
+                        target="_blank">
                     <IconButton>
-                        <WorkOutlineIcon  style={{ color: grey[50] }} />
+                        <GitHubIcon  style={{ color: grey[50] }} />
                         </IconButton>
                         </Fab>
                 </Toolbar>
