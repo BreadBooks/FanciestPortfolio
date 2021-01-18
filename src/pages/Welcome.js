@@ -1,5 +1,6 @@
 import AppBar from '../components/MaterialAppBar';
 import '../index.css'
+import { grey } from '@material-ui/core/colors';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -13,6 +14,10 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import Fade from '@material-ui/core/Fade';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+
+
 const useStyles = makeStyles((theme) => ({
     root: {
       height: '100vh',
@@ -33,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
     },
     avatar: {
       margin: theme.spacing(1),
-      backgroundColor: theme.palette.secondary.main,
+        backgroundColor: '#00b8d4',
+        
     },
     
   }));
@@ -41,28 +47,29 @@ function Welcome() {
     const classes = useStyles();
 
     return (
-        
+        <Fade in>
+            
         <Grid container component="main" className={classes.root}>
             <AppBar />
       <CssBaseline />
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
                 <div className={classes.paper}>
-                    <br></br>
-        <Avatar></Avatar>
-                    <Typography variant="h2">
-                    Hello
+                        <br></br>
+                        
+                        <Avatar className={classes.avatar}>
+                            <FavoriteBorderIcon style={{  textShadow: '1px 3px 5px black', }}/>
+        </Avatar>
+                    <Typography variant="h3" style={{ color: grey[50], textShadow: '1px 3px 5px black', }}>
+                    Welcome to my portfolio
          </Typography>
-            
+         
           
-           
-           
-              
-           
+    
         </div>
       </Grid>
     </Grid>
-    
+    </Fade>
   );
 }
 

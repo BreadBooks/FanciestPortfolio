@@ -17,6 +17,7 @@ import budgetpreview from '../images/budgetpreview.png';
 import legalpreview from '../images/legalpreview.png';
 import covidtrackpreview from '../images/covidtrackpreview.png';
 import teamgenpreview from '../images/teamgenpreview.png';
+import Fade from '@material-ui/core/Fade';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,10 +54,11 @@ export default function MainContainer() {
   const classes = useStyles();
 
   return (
+     <Fade in>
     <div className={classes.root}>
       <br></br>
       <Grid container spacing={24} fixed className={classes.root}>
-        <Grid item xs={6}>
+          <Grid item xs={6}>
     <Card className={classes.root}>
       <CardHeader
         avatar={
@@ -87,7 +89,9 @@ export default function MainContainer() {
       </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={6}>
+            
+            <Grid item xs={6}>
+              
         <Card className={classes.root}>
       <CardHeader
         avatar={
@@ -180,5 +184,6 @@ export default function MainContainer() {
         </Grid>
         
       </div>
+      </Fade>
   );
 }
