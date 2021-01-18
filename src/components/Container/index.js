@@ -12,13 +12,16 @@ import IconButton from '@material-ui/core/IconButton';
 import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import Grid from '@material-ui/core/Grid';
-import budgetpreview from '../images/budgetpreview.png'
+import budgetpreview from '../images/budgetpreview.png';
+import legalpreview from '../images/legalpreview.png';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     paddingTop: '15px',
     margin: '5px',
+    fontFamily: 'Yusei Magic, sans-serif',
   },
   media: {
     height: 0,
@@ -60,7 +63,7 @@ export default function MainContainer() {
           </Avatar>
         }
         title="Budget Tracker"
-        subheader="UT Austin Coding Bootcamp"
+        subheader="UT Austin Coding Bootcamp - Homework 18"
       />
       <CardMedia
         className={classes.media}
@@ -84,24 +87,24 @@ export default function MainContainer() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            1
+            2
           </Avatar>
         }
-        title="Budget Tracker"
-        subheader="UT Austin Coding Bootcamp"
+        title="Legal Formulator"
+        subheader="UT Austin Coding Bootcamp - Project 3"
       />
       <CardMedia
         className={classes.media}
-        image={budgetpreview}
+        image={legalpreview}
         title="Budget Tracker"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Budget Tracker 
+          Legal Formulator 
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href="https://github.com/BreadBooks/BudgetTracker" target="_blank"> 
+        <IconButton aria-label="add to favorites" href="https://legal-formulator.herokuapp.com/" target="_blank"> 
           <FavoriteIcon />
         </IconButton>
       </CardActions>
