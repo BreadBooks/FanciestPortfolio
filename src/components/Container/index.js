@@ -10,7 +10,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import DesktopMacIcon from '@material-ui/icons/DesktopMac';
 import Grid from '@material-ui/core/Grid';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import budgetpreview from '../images/budgetpreview.png';
@@ -78,8 +78,11 @@ export default function MainContainer() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href="https://github.com/BreadBooks/BudgetTracker" target="_blank"> 
-          <FavoriteIcon />
+        <IconButton aria-label="add to favorites" href="https://agile-plateau-50526.herokuapp.com/" target="_blank"> 
+          <DesktopMacIcon />
+              </IconButton>
+              <IconButton aria-label="add to favorites" href="https://github.com/BreadBooks/BudgetTracker" target="_blank"> 
+          <GitHubIcon />
         </IconButton>
       </CardActions>
             </Card>
@@ -107,7 +110,10 @@ export default function MainContainer() {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites" href="https://legal-formulator.herokuapp.com/" target="_blank"> 
-          <FavoriteIcon />
+          <DesktopMacIcon />
+              </IconButton>
+              <IconButton aria-label="add to favorites" href="https://github.com/SCastanedaMunoz/Project-3" target="_blank"> 
+          <GitHubIcon />
         </IconButton>
       </CardActions>
         </Card>
@@ -135,7 +141,10 @@ export default function MainContainer() {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites" href="https://tuxedoed-turtles-project-2.herokuapp.com/" target="_blank"> 
-          <FavoriteIcon />
+          <DesktopMacIcon />
+              </IconButton>
+              <IconButton aria-label="add to favorites" href="https://github.com/SCastanedaMunoz/Project-2" target="_blank"> 
+          <GitHubIcon />
         </IconButton>
       </CardActions>
             </Card>
