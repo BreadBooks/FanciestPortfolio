@@ -5,12 +5,12 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { IconButton } from '@material-ui/core';
 import PortraitIcon from '@material-ui/icons/Portrait';
-import Link from '@material-ui/core/Link';
+import { grey } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor: "pink",
+        backgroundColor: "darkgray",
     },
     title: {
         flexGrow: 1,
@@ -38,7 +38,7 @@ export default function MaterialAppBar() {
                         BreadBooks
                         </Typography>
                     <IconButton>
-                        <PortraitIcon onClick={redirectProjects} />
+                        <PortraitIcon onClick={redirectProjects} fontSize="large" style={{ color: grey[50] }}/>
                     </IconButton>
                 </Toolbar>
             </AppBar>

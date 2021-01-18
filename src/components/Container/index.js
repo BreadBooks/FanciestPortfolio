@@ -14,7 +14,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import Grid from '@material-ui/core/Grid';
 import budgetpreview from '../images/budgetpreview.png';
 import legalpreview from '../images/legalpreview.png';
-
+import covidtrackpreview from '../images/covidtrackpreview.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -115,24 +115,24 @@ export default function MainContainer() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            1
+            3
           </Avatar>
         }
-        title="Budget Tracker"
-        subheader="UT Austin Coding Bootcamp"
+        title="COVID-19 Tracker"
+        subheader="UT Austin Coding Bootcamp - Project 2"
       />
       <CardMedia
         className={classes.media}
-        image={budgetpreview}
-        title="Budget Tracker"
+        image={covidtrackpreview}
+        title="COVID19 Tracker"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Budget Tracker 
+          COVID-19 Tracker
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href="https://github.com/BreadBooks/BudgetTracker" target="_blank"> 
+        <IconButton aria-label="add to favorites" href="https://tuxedoed-turtles-project-2.herokuapp.com/" target="_blank"> 
           <FavoriteIcon />
         </IconButton>
       </CardActions>
