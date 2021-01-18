@@ -12,9 +12,11 @@ import IconButton from '@material-ui/core/IconButton';
 import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import Grid from '@material-ui/core/Grid';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import budgetpreview from '../images/budgetpreview.png';
 import legalpreview from '../images/legalpreview.png';
 import covidtrackpreview from '../images/covidtrackpreview.png';
+import teamgenpreview from '../images/teamgenpreview.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -143,25 +145,25 @@ export default function MainContainer() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            1
+            4
           </Avatar>
         }
-        title="Budget Tracker"
-        subheader="UT Austin Coding Bootcamp"
+        title="Team Profile Generator"
+        subheader="UT Austin Coding Bootcamp - Homework 10"
       />
       <CardMedia
         className={classes.media}
-        image={budgetpreview}
-        title="Budget Tracker"
+        image={teamgenpreview}
+        title="Team Profile Generator"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Budget Tracker 
+        Team Profile Generator
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href="https://github.com/BreadBooks/BudgetTracker" target="_blank"> 
-          <FavoriteIcon />
+        <IconButton aria-label="add to favorites" href="https://github.com/BreadBooks/TeamProfileGen" target="_blank"> 
+          <GitHubIcon />
         </IconButton>
       </CardActions>
             </Card>
