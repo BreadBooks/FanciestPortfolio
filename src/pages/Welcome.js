@@ -35,9 +35,12 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: '#00b8d4',
+    backgroundColor: 'rgb(0, 173, 196)',
 
   },
+  breadcrumbs: {
+    marginTop: "20%"
+  }
 
 }));
 
@@ -65,9 +68,15 @@ function Welcome() {
             <Typography variant="h3" style={{ color: grey[700],  }}>
               Welcome to my portfolio
          </Typography>
-            <Typography variant="h6" style={{ color: grey[500],  textAlign: "center" }}>Hi I'm Brett! I'm a twenty-one year old majoring in Software Engineering at the University of Texas at Arlington. I recentely graduated from the UT Austin Coding Bootcamp where I learned full stack web development.  Besides coding, I love cats, computers, video games, and graphic design. You can find my Resume, Portfolios, and Linkedin down below.
+            <br></br>
+            <Typography variant="h6" style={{ color: grey[600], textAlign: "center" }}>Hi I'm Brett! I'm a twenty-one year old majoring in Software Engineering at the University of Texas at Arlington. I recentely graduated from the UT Austin Coding Bootcamp where I learned full stack web development.  Besides coding, I love cats, computers, video games, and graphic design.</Typography>
+            <br></br>
+            <Typography variant="h4" style={{ color: grey[700], textAlign: "center", marginTop: "35%" }}> You can find my projects, portfolio, resume, and linkedin down below.
          </Typography>
-            <Breadcrumbs aria-label="breadcrumb">
+            <Breadcrumbs aria-label="breadcrumb" className={classes.breadcrumbs}>
+            <Link color="inherit" href="./Projects">
+                Projects
+  </Link>
               <Link color="inherit" href="https://github.com/BreadBooks" target="_blank" >
                 GitHub
   </Link>
@@ -78,9 +87,6 @@ function Welcome() {
                 Linkedin
   </Link>
             </Breadcrumbs>
-
-
-
           </div>
         </Grid>
       </Grid>

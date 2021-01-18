@@ -26,9 +26,7 @@ const useStyles = makeStyles((theme) => ({
     extendedIcon: {
         marginLeft: theme.spacing(0),
     },
-    secondary: {
-        color: 'pink',
-    },
+   
 }));
 
 function redirectHome() {
