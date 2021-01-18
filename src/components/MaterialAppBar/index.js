@@ -34,6 +34,10 @@ function redirectProjects() {
     window.location.replace("/Projects");
 }
 
+function redirectResume() {
+    window.location.replace("/Resume");
+}
+
 export default function MaterialAppBar() {
     const classes = useStyles();
 
@@ -48,18 +52,20 @@ export default function MaterialAppBar() {
                         size="small"
                         color="secondary"
                         aria-label="add"
-                        className={classes.margin}>
+                        className={classes.margin}
+                        onClick={redirectProjects}>
                         <IconButton>
-                            <PaletteIcon onClick={redirectProjects} fontSize="large" style={{ color: grey[50] }} /><a style={{ color: grey[50], textShadow: '1px 2px 3px black' }}>portfolio</a>
+                            <PaletteIcon fontSize="large" style={{ color: grey[50] }} /><a style={{ color: grey[50], textShadow: '1px 2px 3px black' }}>portfolio</a>
                         </IconButton>
                     </Fab>
                     <Fab variant="extended"
                         size="small"
                         color="secondary"
                         aria-label="add"
-                        className={classes.margin}>
+                        className={classes.margin}
+                        onClick={redirectResume}>
                     <IconButton>
-                        <WorkOutlineIcon onClick={redirectProjects} fontSize="large" style={{ color: grey[50] }} /><a style={{ color: grey[50], textShadow: '1px 2px 3px black' }}>resume</a>
+                        <WorkOutlineIcon fontSize="large" style={{ color: grey[50] }} /><a style={{ color: grey[50], textShadow: '1px 2px 2px black' }}>resume</a>
                         </IconButton>
                         </Fab>
                 </Toolbar>
