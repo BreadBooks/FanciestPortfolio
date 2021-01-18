@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, } from "react-router-dom";
 import Main from './pages/Projects';
 import Welcome from './pages/Welcome';
 import Resume from './pages/Resume';
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" exact={true} component={Welcome}>
             <Welcome />
           </Route>
-          
+
           <Route path="/Projects" exact={true} component={Main}>
             <Main />
           </Route>
