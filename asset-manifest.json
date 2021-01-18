@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/FanciestPortfolio/static/css/main.b95cab1d.chunk.css",
+    "main.js": "/FanciestPortfolio/static/js/main.5fc9a644.chunk.js",
+    "main.js.map": "/FanciestPortfolio/static/js/main.5fc9a644.chunk.js.map",
+    "runtime-main.js": "/FanciestPortfolio/static/js/runtime-main.fa3ea281.js",
+    "runtime-main.js.map": "/FanciestPortfolio/static/js/runtime-main.fa3ea281.js.map",
+    "static/js/2.05fa9aad.chunk.js": "/FanciestPortfolio/static/js/2.05fa9aad.chunk.js",
+    "static/js/2.05fa9aad.chunk.js.map": "/FanciestPortfolio/static/js/2.05fa9aad.chunk.js.map",
+    "index.html": "/FanciestPortfolio/index.html",
+    "static/css/main.b95cab1d.chunk.css.map": "/FanciestPortfolio/static/css/main.b95cab1d.chunk.css.map",
+    "static/js/2.05fa9aad.chunk.js.LICENSE.txt": "/FanciestPortfolio/static/js/2.05fa9aad.chunk.js.LICENSE.txt",
+    "static/media/budgetpreview.5be3c497.png": "/FanciestPortfolio/static/media/budgetpreview.5be3c497.png",
+    "static/media/covidtrackpreview.bb966202.png": "/FanciestPortfolio/static/media/covidtrackpreview.bb966202.png",
+    "static/media/legalpreview.e9fa8458.png": "/FanciestPortfolio/static/media/legalpreview.e9fa8458.png",
+    "static/media/teamgenpreview.3577aa21.png": "/FanciestPortfolio/static/media/teamgenpreview.3577aa21.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa3ea281.js",
+    "static/js/2.05fa9aad.chunk.js",
+    "static/css/main.b95cab1d.chunk.css",
+    "static/js/main.5fc9a644.chunk.js"
+  ]
+}
