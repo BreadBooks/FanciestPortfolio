@@ -49,24 +49,34 @@ export default function MaterialAppBar() {
                     <Typography variant="h6" className={classes.title} onClick={redirectHome}>
                         BreadBooks
                         </Typography>
-                    <Fab variant="extended"
+                    <Fab 
                         size="small"
                         color="secondary"
                         aria-label="add"
                         className={classes.margin}
                         onClick={redirectProjects}>
                         <IconButton>
-                            <PaletteIcon fontSize="large" style={{ color: grey[50] }} /><a style={{ color: grey[50], textShadow: '1px 2px 3px black' }}>portfolio</a>
+                            <PaletteIcon fontSize="large" style={{ color: grey[50] }} />
                         </IconButton>
                     </Fab>
-                    <Fab variant="extended"
+                    <Fab 
                         size="small"
                         color="secondary"
                         aria-label="add"
                         className={classes.margin}
                         onClick={redirectResume}>
                     <IconButton>
-                        <WorkOutlineIcon fontSize="large" style={{ color: grey[50] }} /><a style={{ color: grey[50], textShadow: '1px 2px 2px black' }}>resume</a>
+                        <WorkOutlineIcon  style={{ color: grey[50] }} />
+                        </IconButton>
+                    </Fab>
+                    <Fab 
+                        size="small"
+                        color="secondary"
+                        aria-label="add"
+                        className={classes.margin}
+                        onClick={redirectResume}>
+                    <IconButton>
+                        <WorkOutlineIcon  style={{ color: grey[50] }} />
                         </IconButton>
                         </Fab>
                 </Toolbar>
