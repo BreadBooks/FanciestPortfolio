@@ -76,7 +76,7 @@ export default function MainContainer() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Budget Tracker 
+        Track expenses and view spending in real time. Uses MongoDB, Mongoose and Express.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
