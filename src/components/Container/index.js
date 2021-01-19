@@ -105,11 +105,11 @@ export default function MainContainer() {
       <CardMedia
         className={classes.media}
         image={legalpreview}
-        title="Budget Tracker"
+        title="Legal Preview"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Legal Formulator 
+        Legal Template Document. Uses React, React-Router, Material-UI docx, MongoDB, Mongoose, and more.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -140,7 +140,7 @@ export default function MainContainer() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          COVID-19 Tracker
+          Self-Reporting COVID-19 App. Uses Google Maps API, GeoData Solutions, HandleBars, MySQL, and more.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -171,7 +171,8 @@ export default function MainContainer() {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-        Team Profile Generator
+        A Node.js application that creates a team profile for your employees.
+        Uses, fs, path, and inquirer.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
