@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
   breadcrumbs: {
-    marginTop: "20%"
+    marginTop: "5px"
   }
 
 }));
@@ -69,9 +69,9 @@ function Welcome() {
               Welcome to my portfolio
          </Typography>
             <br></br>
-            <Typography variant="h6" style={{ color: grey[600], textAlign: "center" }}>Hi I'm Brett! I'm a twenty-one year old majoring in Software Engineering at the University of Texas at Arlington. I recentely graduated from the UT Austin Coding Bootcamp where I learned full stack web development.  Besides coding, I love cats, computers, video games, and graphic design.</Typography>
+            <Typography variant="h6" style={{ color: grey[600], textAlign: "center", }}>Hi I'm Brett! I'm a twenty-one year old majoring in Software Engineering at the University of Texas at Arlington. I recentely graduated from the UT Austin Coding Bootcamp where I learned full stack web development.  Besides coding, I love cats, computers, video games, and graphic design.</Typography>
             <br></br>
-            <Typography variant="h4" style={{ color: grey[700], textAlign: "center", marginTop: "35%" }}> You can find my projects, portfolio, resume, and linkedin down below.
+            <Typography variant="h4" style={{ color: grey[700], textAlign: "center", marginTop: "50%" }}> You can find my projects, portfolio, resume, and linkedin down below.
          </Typography>
             <Breadcrumbs aria-label="breadcrumb" className={classes.breadcrumbs}>
             <Link color="inherit" href="./Projects">
